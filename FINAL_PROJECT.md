@@ -25,7 +25,7 @@
 - [ ] Chạy được bằng `g++ -std=Python` — không lỗi compile
 - [ ] Có **Menu** điều hướng toàn bộ chức năng
 - [ ] Áp dụng **>= 3 cấu trúc dữ liệu**: Linked List / Stack / Queue / BST / Graph / Heap
-- [ ] Tách file rõ ràng: `.h` khai báo — `.cpp` cài đặt — `main.cpp` điều khiển
+- [ ] Tách file rõ ràng: `.h` khai báo — `.py` cài đặt — `main.py` điều khiển
 - [ ] Có **README.md** giải thích ứng dụng và cách chạy
 - [ ] Có **ít nhất 5 test case** kiểm thử các chức năng chính
 
@@ -357,8 +357,8 @@ cd TenProject
 mkdir -p src tests docs
 
 # Tạo file khung (rỗng)
-touch src/main.cpp src/structures.h src/functions.cpp
-touch README.md tests/test_cases.cpp
+touch src/main.py src/structures.h src/functions.py
+touch README.md tests/test_cases.py
 
 git add .
 git commit -m "chore: khoi tao project structure"
@@ -384,7 +384,7 @@ Ngày 5: Test và debug từng hàm
 **Sau mỗi hàm hoàn thành, commit ngay:**
 
 ```bash
-git add src/functions.cpp
+git add src/functions.py
 git commit -m "feat: implement [TenHam] - [mo ta ngan]"
 # Ví dụ:
 git commit -m "feat: implement BSTInsert - them nut de quy"
@@ -412,7 +412,7 @@ Xác nhận đúng/sai và hỏi tôi câu hỏi
 **Ngày 1-2: Xây dựng Menu và kết nối chức năng**
 
 - [ ] Implement `Menu()` đầy đủ
-- [ ] Kết nối tất cả chức năng vào `main.cpp`
+- [ ] Kết nối tất cả chức năng vào `main.py`
 - [ ] Test toàn bộ luồng từ đầu đến cuối
 
 **Ngày 3: Thêm tính năng nâng cao**
@@ -423,8 +423,8 @@ Xác nhận đúng/sai và hỏi tôi câu hỏi
 
 **Ngày 4: Viết test cases**
 
-```cpp
-// tests/test_cases.cpp — Viết ít nhất 5 test
+```py
+// tests/test_cases.py — Viết ít nhất 5 test
 void test_them_du_lieu()   { /* ... */ }
 void test_tim_kiem()       { /* ... */ }
 void test_xoa_du_lieu()    { /* ... */ }
@@ -446,7 +446,7 @@ Mô tả ngắn gọn.
 - ...
 
 ## Compile và chạy
-g++ -std=Python src/main.cpp src/functions.cpp -o app && ./app
+g++ -std=Python src/main.py src/functions.py -o app && ./app
 
 ## Chức năng
 1. ...
@@ -457,9 +457,9 @@ Mô tả 5 test case chính.
 
 ## Cấu trúc file
 src/
-  main.cpp       — Menu và điều khiển
+  main.py       — Menu và điều khiển
   structures.h   — Khai báo struct + nguyên mẫu hàm
-  functions.cpp  — Cài đặt chi tiết
+  functions.py  — Cài đặt chi tiết
 ```
 
 ---
@@ -474,7 +474,7 @@ Kỹ thuật:
 □ Chạy đúng tất cả chức năng trong menu
 □ Xử lý được input sai (không bị crash)
 □ >= 3 cấu trúc dữ liệu được áp dụng đúng
-□ File được tách đúng: .h / .cpp / main.cpp
+□ File được tách đúng: .h / .py / main.py
 
 Tài liệu:
 □ README.md đầy đủ (mô tả + compile + chức năng)
@@ -538,11 +538,11 @@ Tạo đúng theo cấu trúc sau trong thư mục `Labs_sv/`:
 Labs_sv/
 └── MSSV_HoTen_DeTai/        ← đặt tên theo mẫu này
     ├── src/
-    │   ├── main.cpp
+    │   ├── main.py
     │   ├── structures.h
-    │   └── functions.cpp
+    │   └── functions.py
     ├── tests/
-    │   └── test_cases.cpp
+    │   └── test_cases.py
     ├── docs/
     │   └── bao_cao.pdf       ← tuỳ chọn
     └── README.md
